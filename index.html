@@ -8,5 +8,22 @@
 <body>
   <h1>Vibe Coding Lab</h1>
   <p>Hello from the lab.</p>
+  <button type="button" id="say-hello">Say hello</button>
+  <p id="greeting" hidden>Hello from Codex!</p>
+  <button type="button" id="say-goodbye">Goodbye</button>
+  <p id="farewell" hidden>Goodbye!</p>
+  <button type="button" id="say-welcome">Welcome</button>
+  <p id="welcome" hidden>Welcome to the lab!</p>
+  <script>
+    document.getElementById('say-hello').addEventListener('click', () => {
+      document.getElementById('greeting').hidden = false;
+    });
+    document.getElementById('say-goodbye').addEventListener('click', () => {
+      document.getElementById('farewell').hidden = false;
+    });
+    document.getElementById('say-welcome').addEventListener('click', () => {
+      document.getElementById('welcome').hidden = false;
+    });
+  </script>
 </body>
 </html>
